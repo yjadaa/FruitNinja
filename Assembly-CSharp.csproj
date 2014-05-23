@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{C3D7CCCC-348C-3B56-3594-5E844B807CC3}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-CSharp</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_3_5_0;UNITY_3_5;UNITY_EDITOR;ENABLE_PROFILER;UNITY_STANDALONE_WIN;ENABLE_GENERICS;ENABLE_DUCK_TYPING;ENABLE_TERRAIN;ENABLE_MOVIES;ENABLE_WEBCAM;ENABLE_MICROPHONE;ENABLE_NETWORK;ENABLE_CLOTH;ENABLE_WWW;ENABLE_SUBSTANCE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="UnityEngine">
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Scripts\Enemy\AppleEnemy.cs" />
+     <Compile Include="Assets\Scripts\Enemy\AppleMovement.cs" />
+     <Compile Include="Assets\Scripts\Enemy\BananaEnemy.cs" />
+     <Compile Include="Assets\Scripts\Enemy\Fruit3Enemy.cs" />
+     <Compile Include="Assets\Scripts\Enemy\Fruit4Enemy.cs" />
+     <Compile Include="Assets\Scripts\Enemy\StrawberyEnemy.cs" />
+     <Compile Include="Assets\Scripts\Enemy\TimedBounce.cs" />
+     <Compile Include="Assets\Scripts\Enemy\TimedRotation.cs" />
+     <Compile Include="Assets\Scripts\GameObjects\Sweets.cs" />
+     <Compile Include="Assets\Scripts\HUD\MiniMap\CameraFollow.cs" />
+     <Compile Include="Assets\Scripts\HUD\MiniMap\FollowObject.cs" />
+     <Compile Include="Assets\Scripts\HUD\MiniMap\MiniMapIcons.cs" />
+     <Compile Include="Assets\Scripts\HUD\StatusBar.cs" />
+     <Compile Include="Assets\Scripts\Kinect\GestureRecognizer.cs" />
+     <Compile Include="Assets\Scripts\Kinect\KCameraMove.cs" />
+     <Compile Include="Assets\Scripts\Kinect\KMonitor.cs" />
+     <Compile Include="Assets\Scripts\Kinect\KPlayerMove.cs" />
+     <Compile Include="Assets\Scripts\Kinect\KUInterface.cs" />
+     <Compile Include="Assets\Scripts\Player\EnergyController.cs" />
+     <Compile Include="Assets\Scripts\Player\HealthController.cs" />
+     <Compile Include="Assets\Scripts\Player\ObjectScan.cs" />
+     <Compile Include="Assets\Scripts\Player\PlayerControls\CameraMovement.cs" />
+     <Compile Include="Assets\Scripts\Player\PlayerControls\CameraRotation.cs" />
+     <Compile Include="Assets\Scripts\Player\PlayerControls\Movement.cs" />
+     <Compile Include="Assets\Scripts\PlayerControls\MouseLook.cs" />
+     <Compile Include="Assets\Scripts\PlayerControls\PlayerHUD.cs" />
+     <Compile Include="Assets\Scripts\PlayerControls\Selector.cs" />
+     <Compile Include="Assets\Scripts\Utilities\DoubleExpSmoothing.cs" />
+     <Compile Include="Assets\Scripts\Utilities\iTween.cs" />
+     <Compile Include="Assets\Scripts\Weapons\BladeLeft.cs" />
+     <Compile Include="Assets\Scripts\Weapons\BladeRight.cs" />
+     <Compile Include="Assets\Scripts\Weapons\Hook.cs" />
+     <Compile Include="Assets\Scripts\Weapons\HookSelect.cs" />
+     <Compile Include="Assets\Scripts\Weapons\PlayerBehavior.cs" />
+     <Compile Include="Assets\Scripts\Weapons\Shield.cs" />
+     <Compile Include="Assets\Scripts\Weapons\SwordLeft.cs" />
+     <Compile Include="Assets\Scripts\Weapons\SwordRight.cs" />
+     <None Include="Assets\Standard Assets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{5612621A-3C31-978F-F965-09EDF2BFC59E}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+    <ProjectReference Include="Assembly-UnityScript-firstpass.unityproj">
+      <Project>{04C290EF-90B7-8BB0-79CE-82E2D3CCAD7E}</Project>      <Name>Assembly-UnityScript-firstpass</Name>    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>

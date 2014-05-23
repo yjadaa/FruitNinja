@@ -1,0 +1,19 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Enemy\Fruit4Enemy.cs">
+    <Files>
+      <File FileName="Assets\Scripts\Enemy\Fruit4Enemy.cs" Line="24" Column="11" />
+      <File FileName="Assets\Scripts\Weapons\Hook.cs" Line="6" Column="18" />
+      <File FileName="Assets\Scripts\Player\PlayerControls\CameraMovement.cs" Line="105" Column="9" />
+      <File FileName="Assets\Scripts\Weapons\SwordRight.cs" Line="33" Column="6" />
+      <File FileName="Assets\Scripts\Weapons\SwordLeft.cs" Line="61" Column="2" />
+      <File FileName="Assets\Scripts\Player\HealthController.cs" Line="32" Column="11" />
+      <File FileName="Assets\Scripts\Weapons\PlayerBehavior.cs" Line="148" Column="43" />
+      <File FileName="Assets\Scripts\PlayerControls\Selector.cs" Line="49" Column="14" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
